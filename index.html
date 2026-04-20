@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <Title>Resume</Title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <style>
+
+        body 
+        {
+        /*border: 1px solid black;*/
+        height: auto;
+        width: 990px;
+        margin: auto;
+        /*margin-top: 30px;*/
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5;
+        }
+
+        /* intro for top div containing name and object */
+        .intro 
+        {
+            background-color: white;
+            /* background-color: rgb(205, 225, 235); */
+            color: #000;
+            /*border: 1px solid black;*/
+        }
+
+        /* name for devesh mandar nimkar */
+        #name 
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 40px;
+            font-weight: 600;
+            font-style: normal;
+            text-align: center;
+            margin: 0 0;
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+
+        /* deg for software engineer */
+        #deg 
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            font-weight: 800;
+            font-style: normal;
+            text-align: center;
+            margin: 0 0 ;
+            text-decoration: underline;
+        }
+
+        /* intropara for adjustment of para inside of the introduction part */
+        #intropara 
+        {
+            text-indent: 25px;
+            font-size: 18px; 
+            text-align: justify;
+            padding: 0 5px;
+        }
+
+        /* address are setting in one row i.e flex*/
+        .row1 
+        {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            column-count: 4;
+            /*column-rule: 2px solid ;*/
+            background-color: rgb(0, 54, 76);
+            color: whitesmoke;
+            padding-left: 14px;
+            text-align: center;
+        }
+
+        /* address are setting in one row i.e flex text & icons*/
+        .row2 {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 2px;
+            background-color:rgb(0, 54, 76);
+            color:whitesmoke;
+            text-align: center;
+            padding: 3px;
+        }
+
+        /* heading for main tabs in container1 */
+        .cont1-heading1 
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* border: none; */
+            width: 20%;
+            border-bottom: 4px solid rgb(0, 54, 76);  /*rgb(6, 37, 59);*/
+            /* background-color: rgb(205, 225, 235);/*rgb(246, 250, 249);white; */
+            font-weight: bold;
+            margin: 1px;
+            font-size: 20px;
+        }
+
+        /* heading for projects name */
+        .heading2 
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-bottom: 1px solid black;
+            width: 70%;
+            font-weight: bold;
+            margin: 0;
+            font-size: 18px;
+        }
+
+        /*container for skills */
+        .container-skills
+        {
+            width: 100%;
+            font-size: 40%;
+        }
+
+
+        /* setting table width and height */
+        table 
+        {
+            width: 100%;
+            height: 60px;
+            /*overflow-x: auto;*/
+        }
+
+        /* decorating table data*/ 
+        td 
+        {
+            /*border-bottom: 2px solid black;*/
+            border: 2px solid black ;
+            text-align: left;
+            word-spacing: 10px;
+            vertical-align: center;
+            padding-left: 20px;
+            height:15px;
+        }
+
+
+        /* decorating table heading */
+        th 
+        {
+            border-bottom: 2px solid black;
+            text-align: center;
+            vertical-align: center;
+            background-color: rgb(0, 54, 76) ; /* rgb(6, 37, 59);*/
+            color: white;
+            margin: auto;
+            width: 18%;
+            height: 50px;
+        }
+
+        /* decorating table heading */
+        .th1 
+        {
+            border-bottom: 2px solid black;
+            text-align: center;
+            vertical-align: center;
+            background-color: rgb(0, 54, 76) ; /* rgb(6, 37, 59);*/
+            color: white;
+            margin: auto;
+            width: 2%;
+        }
+
+        /* decorating table heading */
+        .th2 
+        {
+            border-bottom: 2px solid black;
+            text-align: center;
+            vertical-align: center;
+            background-color: rgb(0, 54, 76) ; /* rgb(6, 37, 59);*/
+            color: white;
+            /*margin: 15px;*/
+            width: 49%;
+            height: 25px;
+        }
+
+        .td1
+        {
+            border: 0px;
+        }
+
+        .exp-div
+        {
+            font-size: 17px;
+            word-spacing: 10px;
+            text-align: justify;
+        }
+
+        .ed-clg
+        {
+            width:50%;
+            height:20px;
+        }
+
+        .ed-no
+        {
+            width:5%;
+            height:20px;
+        }
+
+        .ed-qlf
+        {
+            width:10%;
+            height:20px;
+        }
+
+        .ed-per
+        {
+            width:15%;
+            height:20px;
+        }
+
+        .ed-yr
+        {
+            width:10%;
+            height:20px;
+        }
+
+        .cont2-heading2
+        {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* border: none; */
+            width: 30%;
+            border-bottom: 4px solid rgb(0, 54, 76);  /*rgb(6, 37, 59);*/
+            /* background-color: rgb(205, 225, 235);/*rgb(246, 250, 249);white; */
+            font-weight: bold;
+            margin: 1px;
+            font-size: 20px;
+            word-spacing: 5px;
+        }
+
+        .space 
+        {    
+            line-height: 150%;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <!-- Introduction -->
+        <div class="intro">
+            <p id="name">Devesh Nimkar</p>
+            <p id="intropara">
+                Looking for position in an organization that would assist me in gaining greater practical excellence and also utilize my skills and professional experience in the best possible manner,having interest in Networking,Unix/Linux and Solaris System profile which further gives me an opportunity to grow in my career journey while contributing to the team that dynamically works towards the growth of the organization.
+            </p>
+        </div>
+
+        <!-- Adress Table -->
+        <div class="row1">
+            <div class="row2">
+                <div>
+                    <span class="material-icons" style="font-size: 20px;">place</span>
+                </div>
+                <div><b>Panvel , MH, India</b></div>
+            </div>
+            <div class="row2" >
+                <div>
+                    <span class="material-icons" style="font-size:20px;">phone_android</span>
+                </div>
+                <div><b>+91 7744844056</b></div>
+            </div>
+            <div class="row2">
+                <div>
+                    <span class="material-icons" style="font-size:20px;">mail_outline</span>
+                </div>
+                <div><b><u>deveshnimkar1998@gmail.com</u></b></div>
+            </div>
+            <div class="row2">
+                <div>
+                    <span class="bi bi-linkedin" style="font-size:16px"></span>
+                </div>
+                <div><b><u>linkedin.com/in/devesh-nimkar</u></b></div>
+            </div>
+        </div> <br>
+
+        <!-- Skills -->
+
+        <div>
+            <p class="cont1-heading1"><span class="bi bi-gear-fill" style="font-size:20px;width:22px; height:20px; color:black">  SKILLS</span></p><br>
+            <div classs="container-skills">
+                <table>
+                    <tr>
+                        <th class="th1"> 1 </th>
+                        <th> Operating System:- </th>
+                        <td> Solaris OS (vs.8/9/10),  Unix / Linux</td>
+                        <td class="td1"></td>
+                        <th class="th1"> 4 </th>
+                        <th> NMS Applications:- </th>
+                        <td> HP Open View , RANCID , DNS </td>
+                    </tr>
+                    <tr>
+                        <th class="th1"> 2 </th>
+                        <th> Network Security:- </th>
+                        <td> SBR , AAA , LDAP , TACACS , ARBOR </td>
+                        <td class="td1"></td>
+                        <th class="th1"> 5 </th>
+                        <th> Network Devices :- </th>
+                        <td> CISCO , Huawei , NOKIA , Juniper </td>
+                    </tr>
+                    <tr>    
+                        <th class="th1"> 3 </th>
+                        <th> Networking :- </th>
+                        <td> SNMP , TELNET , SSH , TCP/IP , FTP , SFTP </td>
+                        <td class="td1" ></td>
+                        <th class="th1"> 6 </th>
+                        <th> Tools :- </th>
+                        <td> PUTTY , Infovista , Inflobox DNS, Xbrowser , TOAD </td>
+                    </tr>  
+                    <tr>    
+                        <th class="th1"> 7 </th>
+                        <th> Languages :-</th>
+                        <td> HTML / CSS , Python , PHP</td>
+                        <td class="td1" ></td>
+                        <th class="th1"> 8 </th>
+                        <th> Known :- </th>
+                        <td> Shell scripting , SQL , EPBX</td>
+                    </tr>
+                </table>
+            </div>
+        </div><br>    
+
+        <!----------Experience -------------->
+
+        <div>
+            <p class="cont1-heading1"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" fill="currentColor"
+                        class="bi bi-grid-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
+                    </svg><span style="font-size: 20px;">  EXPERIENCE</span></p>
+                
+            <p style="font-weight:30px;border-bottom:2px solid black;border-left:4px solid black; font-size:18px;word-spacing: 5px;padding-left:5px;">Netizen Engineering Private LTD [Sept 2022 - Present]</p>
+
+            <div class="exp-div" style="line-height:1.6">
+                <p><span style="font-weight: bold;border-bottom: 2px solid black;">Job Profile</span>:- Senior Engineer </p>
+                <p><span style="font-weight: bold;border-bottom: 2px solid black;">Project</span>:- Reliance Communications LTD, DAKC</p>
+                <p><span style="font-weight: bold;border-bottom: 2px solid black;">Team</span>:- Network Managment Group, NNOC (NMG-Data_OPS)</p>
+                <p><span style="font-weight: bold;border-bottom: 2px solid black;">Location</span>:- Reliance  National Network Operation Centre, NHQ (DAKC), Navi Mumbai </p>
+                <!---------<p>On the Payroll of Netizen Engineering Private LTD.</p>------>         
+                <div>
+                <ol type="1">
+                    <li s3yle="padding-bottom:5px">Server</li>    
+                    <ul type="square"  class="space">
+                        <li>Working on Sun Solaris Servers, Windows servers , HP servers and Linux Servers.</li>
+                        <li>User Administration by creating and maintaining User's accounts.</li>
+                        <li>Maintaining file systems: Checking and repairing file systems, Mounting file system and Maintaining file usage, Optimization of space & performance.</li>
+                        <li>Network concepts like Configuring the Hostname and IP, Route Addition, NTP Configuration.</li>
+                        <li>Solving systems's performance related issues & routine health check.</li>
+                        <li>Handling day-to-day Server Alerts, incidents and Service calls for Solaris Servers to fix the issue within SLA also performed routine audits of systems and software.</li>
+                        <li>Working with Sun server models like v240 v440 v480 SUN_BLADE T2000 and In HP ProLient DL580 G7</li>
+                    </ul>   
+                    <li style="padding-top: 30px; padding-bottom:5px">Networking</li>
+                    <ul type="square"  class="space">
+                        <li>Working and Managing different types of Routers, Switches Firewall from CISCO HUAWEI and Juniper and the configuration for the same.</li>
+                        <li>Configuration of SNMP AAA TACACS SYSLOG RANCID in routers.</li>
+                        <li>Administrating and Maintaining Steel_Belt_Radius (SBR) for AAA and LDAP.</li>
+                        <li>Analyze log, track and complex software and hardware matters of significance pertaining to networking issues.</li>
+                        <li>Auditing of Network devices like CISCO Huawei based on reachability and authentication.</li>
+                        <li>Working on protocols such as AAA, LDAP, SNMP, TELNET, FTP, SSH & DNS.</li>
+                        <li>Monitoring Network activities to quickly detect and resolve operational and security issues.</li>
+                        <li>Maintaining 40K+ network device's credentials and its backups.</li>
+                    </ul>
+                    <li style="padding-top: 30px; padding-bottom:5px">Application</li>
+                    <ul type="square"  class="space">    
+                        <li>Maintaining NMS/EMS tools use for monitoring network parameters. Tools such as HPOV, NNM 7.5/9.x, ARBOR, InfoVista.</li>
+                        <li>Managing Network Server Application and tools like SBR, LDAP admin, DNS </li>
+                        <li>Host and maintain various Web portals and services required for other NNOC teams to monitor network 24/7.</li>
+                        <li>Switched to a different Team LIM OPS having exposure to work and managing various platforms such as EPBX platform for Internal Wireline Communication, Creating and maintaining polices on firewall, Managing Remote Vendor Access Systems and User Creation for Citrix & Accelpro.</li>
+                        <li>Also switched to Team Transport OPS having exposure in Addition & Deletion of NE's(Ciena's) from Fed/Controllers and also providing backups of them.</li>
+                        <!-- <li style="padding-bottom:15px">Extended knowledge about Citrix & Accelpro Remote Vendor Access Systems and User Creation</li> -->
+                    </ul>
+                </ol>    
+                </div>
+
+                <!--------Internship--------->
+
+                <p style="font-weight:30px;border-bottom:2px solid black;border-left:4px solid black; font-size:18px;word-spacing: 5px;padding-left:5px;">Maxgen Technologies Pvt. Ltd, Pune(12/2018 - 01/2019)</p>
+                <p><span style="font-weight: bold;border-bottom: 2px solid black;">Job Profile</span>:- Internship</p>
+                <div style="margin-left:38px">
+                    <ul type="square"  class="space">
+                        <li>Learned about SDLC stages & models, levels of testing and testing techniques.</li>
+                        <li>Experienced how an automation works.</li>
+                        <li>Learned automation testing using Selenium WebDriver.</li>
+                    </ul>
+                </div>
+            </div>    
+        </div><br>
+
+        <!--------- Project -------->
+        <div class="exp-div" style="line-height:1.6">
+            <p class="cont1-heading1"><span class="material-icons" style="font-size:22px;width:22px; height:20px; color:black">dashboard</span>TEAM PROJECT</p>
+
+            <p class="heading2" style="padding-top: 10px; line-height:26px;">Servers Shifting Movement From <br>Internet Data Centre (IDC) to Media Convergence Node (MCN)</p>
+            <ul type="square" class="space">
+            <p style="margin-left: -35px;">For server shifting movement there was a assigned vendor and he had some assigned task such as Physical shifting of server and racks, cable assembling and giving AC/DC power supply in racks.But as a server owner we had done below taks in teamwork :-</p>
+
+                <li>Checked and notted down basic server parameters before shifting of servers.
+	i.e. IP Configuration, Disk- Partitioning, Disk Mirroring, Server Backups, Routs and Gateway, Autobooot sequencing and Hardware checkups.</li>
+                <li>Contribiutted in checking connectivity from server to switch and switch to firewall.Ports locating and cable tracing.</li>
+                <li>Checked secondary setup of server was running or not by disconnecting primary setup from network and vice versa.</li>
+                <li>Shutted down the servers by stopping application processess.</li>
+                <li>Physically helped in installation of server in racks.</li>
+                <li>Helped to power on the servers and rechecking of server parameters by connecting console.</li>
+                <li>After successfuly powering on servers , my resposiblity was to start application and its processes.</li>
+                <li>Involed in troubleshooting of some applications and processes.</li>
+            </ul>
+        </div>
+
+        <!--------Achievment--------->
+
+        <div>
+            <p class="cont1-heading1"><i class="material-icons" style="font-size: 20px; padding-top:20px">star</i> ACHIEVEMENT</p>
+            <div class="exp-div">
+                <ul type="square"  class="space">
+                    <li>Certificate of Excellence for Exemplary Performance from Reliance Communications (Quarter 2023-24)</li>
+                    <li>Badge of Microsoft Technology Associate for Security Fundamentals - [Certified 2018]</li>
+                </ul>
+            </div>
+        </div><br>
+
+
+        <!--------Education--------->
+
+        <div>
+            <p class="cont1-heading1">
+                <caption><span class="material-icons" style="font-size:20px;width:22px; height:20px; color:black; align-items: baseline;">school</span>EDUCATION</caption>
+            </p><br>
+            <table>
+                <tr>
+                    <th class="ed-no">#</th>
+                    <th class="ed-qlf">Qalification</th>
+                    <th class="ed-clg">Collage Name</th>
+                    <th class="ed-per">%</th>
+                    <th class="ed-yr">Passing Yr.</th>
+                </tr>
+                <tr>
+                    <th style="height:30px;">1</th>
+                    <td style="text-align:center;padding-left:0;">B.E(IT)</td>
+                    <td style="text-align:center;padding-left:0;">Finolex Academy of Management & Technology, Ratnagiri.</td>
+                    <td style="text-align:center;padding-left:0;">7.05(CGPA)</td>
+                    <td style="text-align:center;padding-left:0;">2020</td>
+                </tr>
+                <tr>
+                    <th style="height:30px;">2</th>
+                    <td style="text-align:center;padding-left:0;">12<sup>th</sup></td>
+                    <td style="text-align:center;padding-left:0;">V.S. Gangan, Jr. Collage, Ratnagiri</td>
+                    <td style="text-align:center;padding-left:0;">57.81%</td>
+                    <td style="text-align:center;padding-left:0;">2016</td>
+                </tr>
+                <tr>
+                    <th style="height:30px;">3</th>
+                    <td style="text-align:center;padding-left:0;">10<sup>th</sup></td>
+                    <td style="text-align:center;padding-left:0;">Phatak Highschool, Ratnagiri</td>
+                    <td style="text-align:center;padding-left:0;">81.20%</td>
+                    <td style="text-align:center;padding-left:0;">2014</td>
+                </tr>
+            </table>
+        </div><br>
+
+        <div style="padding-top:20px;word-spacing: 5px;">
+            <p class="cont2-heading2">
+                <caption><span class="material-icons" style="font-size:20px;width:22px; height:20px; color:black; align-items: baseline;">account_box</span>PERSONAL INFORMATION</caption>
+            </p><br>
+            <p style="font-size:17px;margin-left:20px;"><span style="font-weight: bold;border-bottom: 1px solid black;font-size:17px;">Name</span>:- Devesh Mandar Nimkar</p>
+            <p style="font-size:17px;margin-left:20px;"><span style="font-weight: bold;border-bottom: 1px solid black;font-size:17px;">Date of Birth</span>:- 5<sup>th</sup> Oct 1998</p>
+            <p style="font-size:17px;margin-left:20px;"><span style="font-weight: bold;border-bottom: 1px solid black;font-size:17px;">Marrital Status</span>:- Unmarried</p>
+            <p style="font-size:17px;margin-left:20px;"><span style="font-weight: bold;border-bottom: 1px solid black;font-size:17px;">Permanent Address</span>:- At Post Asore, Tal - Guhagar, Dis - Ratnagiri, Maharashtra 415726</p>
+            <p style="font-size:17px;margin-left:20px;"><span style="font-weight: bold;border-bottom: 1px solid black;font-size:17px;">Nationality</span>:- Indian</p>
+            <p style="font-size:17px;margin-left:20px;"><span style="font-weight: bold;border-bottom: 1px solid black;">Language Known</span>:- Marathi, Hindi, English</p>
+        </div>
+
+
+    </div><br>  
+    
+</body>
