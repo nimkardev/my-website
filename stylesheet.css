@@ -1,0 +1,214 @@
+
+/* this body is for design content in body */
+body {
+
+    border: 1px solid black;
+    width : 21.59cm;
+    height : 27.94cm;
+    margin: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;   
+
+}
+
+/*rect for body align in center with width*/
+.rect {
+    margin: auto;
+    width: 960px;
+}
+
+
+/* intro for top div containing name and object */
+.intro {
+    background-color: white;
+    color: #000;
+    padding: auto;
+}
+
+/* header for address conataining flex horizontal row like navbar */
+.header
+{
+    background-color:rgb(1, 36, 50);
+    color:white;
+    width: 100%;
+    font-weight: bold;
+    /* padding: 1px; */
+}
+
+/* address are setting in one row i.e flex */
+#row1
+{
+    display : flex;
+    column-gap: 70px;
+    margin-left: 10px;
+    padding-bottom: 15px;
+    vertical-align: middle;
+}
+
+/* skills are setting in one row i.e flex  */
+.row2 
+{
+    display: flex;
+    column-gap: 20px;
+    line-height: 30px;
+    margin: 5px 10px;
+}
+
+/* for floating left */
+.container1 
+{
+    float: left;
+    width: 50%;
+    padding: auto;
+}
+
+/* for floating right */
+.container2 
+{
+    float: right;
+    width: 50%;
+    padding: auto;
+}
+
+/* name for devesh mandar nimkar */
+#name
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin: 0%;
+    text-decoration: underline;
+}
+
+/* deg for software engineer */
+#deg
+{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin: 0%;
+    text-decoration: underline;
+}
+
+/* heading for main tabs */
+.heading1
+{
+    font-family: Cambria,Cochin,Georgia,Times,'Times New Roman',serif;
+    border:none;
+    width: 50%;
+    border-bottom: 4px solid rgb(6, 37, 59);
+    background-color: white;
+    font-weight:bold;
+    margin:1px;
+    font-size: 20px;
+}
+
+
+/* heading for projects name */
+.heading2 
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-bottom: 1px solid black;
+    width: 70%;
+    font-weight: bold;
+    margin: 0;
+    font-size: 17px;
+}
+
+/* heading for main tabs */
+.heading3 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border: none;
+    width: 70%;
+    border-bottom: 4px solid rgb(6, 37, 59);
+    background-color: white;
+    font-weight: bold;
+    margin: 1px;
+    font-size: 20px;
+}
+
+
+table
+{
+    width: 80%;
+    height: 60px;
+    overflow-x:auto;
+}
+
+td
+{
+    border-bottom: 2px solid black;
+    text-align: center;
+    vertical-align:center;
+    padding: 3px;
+}
+
+th
+{
+    border-bottom: 2px solid black;
+    text-align: center;
+    vertical-align:center;
+    background-color:rgb(6, 37, 59);
+    color:white;
+    margin: auto;
+}
+
+/* .skills
+{
+    border-style:solid;
+    border-width: 1px;
+    border-bottom:3px solid rgb(6, 37, 59);
+    background-color: white;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+    padding:5px;
+    margin: 5px;
+    height: 20px;
+} */
+
+/* .skills {
+    border-bottom: 3px solid rgb(6, 37, 59);
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+    margin: 5px;
+} */
+
+/* .skills {
+    border-width:1px;
+    border-bottom-color:2px whitesmoke;
+    text-align: center;
+    margin: 5px;
+} */
+
+
+/* skills for subskills from skills */
+.skills{
+    background-color: white;
+    color: #000;
+    border-bottom: 2px solid rgb(6, 37, 59);
+    border-radius: 4px;
+    column-gap: 10px;
+}
+
+
+
+.interest {
+    border-width: 1px;
+    border-bottom: 3px solid rgb(6, 37, 59);
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    line-height: 10px;
+}
+
+/* .python {width:0.7%; border-bottom: 2px solid  rgb(6, 37, 59) ;} */
